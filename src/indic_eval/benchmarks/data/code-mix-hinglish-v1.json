@@ -1,0 +1,18 @@
+{
+  "id": "indic-code-mix-hinglish-v1",
+  "name": "Code-Mix Hinglish",
+  "description": "Tests whether the model can hold a Hinglish (code-mixed Hindi-English) register. Target Devanagari fraction 0.3-0.6 — too pure-English or too pure-Hindi both lose.",
+  "primary_metric": "code_mix_proximity",
+  "examples": [
+    {"id": "cm-001", "prompt": "Reply in Hinglish (mix Hindi and English naturally, Hindi in Devanagari, English in Latin): boss ne meeting cancel kar di, thoda relief hai. What should I do today?", "reference": "आराम", "language": "hi-en", "metadata": {"target_cmi": 0.4}},
+    {"id": "cm-002", "prompt": "Hinglish reply: yaar mujhe kal interview hai aur main bahut nervous hoon. Kya karu? (Mix kar ke jawab do — naturally.)", "reference": "तैयारी", "references": ["तैयारी", "practice", "तैयार"], "language": "hi-en", "metadata": {"target_cmi": 0.4}},
+    {"id": "cm-003", "prompt": "Mom ne bola hai dinner pe ghar aana hai. Hinglish me reminder likho mere liye.", "reference": "मम्मी", "references": ["मम्मी", "मां", "घर"], "language": "hi-en", "metadata": {"target_cmi": 0.5}},
+    {"id": "cm-004", "prompt": "Code-mixed reply: 'I just landed a job offer at Razorpay!' — congratulate me in Hinglish (Devanagari + Latin).", "reference": "बधाई", "references": ["बधाई", "मुबारक", "wow"], "language": "hi-en", "metadata": {"target_cmi": 0.4}},
+    {"id": "cm-005", "prompt": "Subah-subah ka mood: chai chahiye but kitchen me sab khatam ho gaya. Reply in Hinglish.", "reference": "चाय", "references": ["चाय", "दूध", "tea"], "language": "hi-en", "metadata": {"target_cmi": 0.4}},
+    {"id": "cm-006", "prompt": "Boss ne raise diya — Hinglish me celebrate karo!", "reference": "खुशी", "references": ["खुशी", "बधाई", "wow"], "language": "hi-en", "metadata": {"target_cmi": 0.4}},
+    {"id": "cm-007", "prompt": "Family WhatsApp group pe diwali wishes likho — Hinglish me, formal nahi, casual.", "reference": "दिवाली", "references": ["दिवाली", "शुभ"], "language": "hi-en", "metadata": {"target_cmi": 0.5}},
+    {"id": "cm-008", "prompt": "Apologise to mom for being late. Hinglish.", "reference": "माफ", "references": ["माफ", "sorry", "देर"], "language": "hi-en", "metadata": {"target_cmi": 0.5}},
+    {"id": "cm-009", "prompt": "Dost ko movie ke liye plan banao Hinglish me.", "reference": "मूवी", "references": ["मूवी", "movie", "plan"], "language": "hi-en", "metadata": {"target_cmi": 0.4}},
+    {"id": "cm-010", "prompt": "Office me chai break ka announcement Hinglish me likho.", "reference": "ब्रेक", "references": ["ब्रेक", "break", "चाय"], "language": "hi-en", "metadata": {"target_cmi": 0.5}}
+  ]
+}

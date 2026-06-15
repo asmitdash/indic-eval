@@ -1,0 +1,23 @@
+{
+  "id": "indic-script-fidelity-v1",
+  "name": "Indic Script Fidelity",
+  "description": "Did the model answer in the script the user asked for? A Hindi prompt should yield a Devanagari answer; English-script transliteration is a fail.",
+  "primary_metric": "script_purity",
+  "examples": [
+    {"id": "sf-hi-001", "prompt": "भारत की राजधानी क्या है? कृपया हिन्दी में उत्तर दीजिए।", "reference": "नई दिल्ली", "language": "hi", "script": "devanagari"},
+    {"id": "sf-hi-002", "prompt": "ताज महल कहाँ स्थित है? देवनागरी में जवाब दें।", "reference": "आगरा", "language": "hi", "script": "devanagari"},
+    {"id": "sf-hi-003", "prompt": "हिन्दी में बताइए: सूर्य पूर्व से उगता है या पश्चिम से?", "reference": "पूर्व", "language": "hi", "script": "devanagari"},
+    {"id": "sf-hi-004", "prompt": "महात्मा गांधी का जन्म कब हुआ था? हिन्दी में लिखें।", "reference": "1869", "references": ["1869", "उन्नीस सौ", "अक्टूबर"], "language": "hi", "script": "devanagari"},
+    {"id": "sf-bn-001", "prompt": "পশ্চিমবঙ্গের রাজধানীর নাম কী? বাংলায় উত্তর দিন।", "reference": "কলকাতা", "language": "bn", "script": "bengali"},
+    {"id": "sf-bn-002", "prompt": "রবীন্দ্রনাথ ঠাকুর কোন ভাষায় লিখতেন? বাংলা ভাষায় উত্তর দিন।", "reference": "বাংলা", "language": "bn", "script": "bengali"},
+    {"id": "sf-ta-001", "prompt": "தமிழ்நாட்டின் தலைநகரம் எது? தமிழில் பதில் சொல்லுங்கள்.", "reference": "சென்னை", "language": "ta", "script": "tamil"},
+    {"id": "sf-ta-002", "prompt": "திருவள்ளுவர் எழுதிய நூல் எது? தமிழில் கூறுங்கள்.", "reference": "திருக்குறள்", "language": "ta", "script": "tamil"},
+    {"id": "sf-te-001", "prompt": "ఆంధ్రప్రదేశ్ రాజధాని ఏది? తెలుగులో సమాధానం ఇవ్వండి.", "reference": "అమరావతి", "references": ["అమరావతి", "హైదరాబాద్"], "language": "te", "script": "telugu"},
+    {"id": "sf-mr-001", "prompt": "महाराष्ट्राची राजधानी कोणती आहे? कृपया मराठीत उत्तर द्या.", "reference": "मुंबई", "language": "mr", "script": "devanagari"},
+    {"id": "sf-gu-001", "prompt": "ગુજરાત રાજ્યનું પાટનગર શું છે? ગુજરાતીમાં જવાબ આપો.", "reference": "ગાંધીનગર", "language": "gu", "script": "gujarati"},
+    {"id": "sf-pa-001", "prompt": "ਪੰਜਾਬ ਦੀ ਰਾਜਧਾਨੀ ਕੀ ਹੈ? ਪੰਜਾਬੀ ਵਿੱਚ ਉੱਤਰ ਦਿਓ।", "reference": "ਚੰਡੀਗੜ੍ਹ", "language": "pa", "script": "gurmukhi"},
+    {"id": "sf-kn-001", "prompt": "ಕರ್ನಾಟಕದ ರಾಜಧಾನಿ ಯಾವುದು? ಕನ್ನಡದಲ್ಲಿ ಉತ್ತರಿಸಿ.", "reference": "ಬೆಂಗಳೂರು", "language": "kn", "script": "kannada"},
+    {"id": "sf-ml-001", "prompt": "കേരളത്തിന്റെ തലസ്ഥാനം ഏതാണ്? മലയാളത്തിൽ മറുപടി പറയുക.", "reference": "തിരുവനന്തപുരം", "language": "ml", "script": "malayalam"},
+    {"id": "sf-or-001", "prompt": "ଓଡ଼ିଶାର ରାଜଧାନୀ କେଉଁଟି? ଓଡ଼ିଆରେ ଉତ୍ତର ଦିଅ।", "reference": "ଭୁବନେଶ୍ୱର", "language": "or", "script": "odia"}
+  ]
+}

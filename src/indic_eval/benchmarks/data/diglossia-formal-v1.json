@@ -1,0 +1,18 @@
+{
+  "id": "indic-diglossia-formal-v1",
+  "name": "Hindi Diglossia (Sanskritised vs colloquial)",
+  "description": "Hindi has a wide register range from heavily Sanskritised (used in govt notices, Doordarshan) to heavily Urdu-loanword colloquial (Bollywood, Delhi/UP street). Many models collapse to one register. Tests register control.",
+  "primary_metric": "contains",
+  "examples": [
+    {"id": "dg-001", "prompt": "एक शुद्ध संस्कृतनिष्ठ हिन्दी में लिखें: 'आज सरकार ने नया कानून पारित किया है।'", "reference": "अद्य", "references": ["अद्य", "विधेयक", "पारित", "अधिनियम"], "language": "hi"},
+    {"id": "dg-002", "prompt": "बोलचाल की दिल्ली वाली हिन्दी में लिखो: 'कल बहुत ट्रैफिक था।'", "reference": "जाम", "references": ["जाम", "बहुत", "बहोत", "ट्रैफिक"], "language": "hi"},
+    {"id": "dg-003", "prompt": "सरकारी हिन्दी रजिस्टर: 'इस संबंध में अधिसूचना जारी की जाती है।' इसे और औपचारिक बनाइए।", "reference": "एतद्द्वारा", "references": ["एतद्द्वारा", "तदनुसार", "प्रसंग"], "language": "hi"},
+    {"id": "dg-004", "prompt": "मोहल्ले की दादी कैसे बोलेगी: 'खाना खा लो बेटा।'", "reference": "खाना", "references": ["खाना", "बेटा", "ले लो"], "language": "hi"},
+    {"id": "dg-005", "prompt": "दूरदर्शन समाचार शैली में बताइए: मौसम विभाग की चेतावनी।", "reference": "मौसम", "references": ["मौसम", "विभाग", "चेतावनी"], "language": "hi"},
+    {"id": "dg-006", "prompt": "अदालत की भाषा में कहें: 'गवाह को सत्य बोलना चाहिए।'", "reference": "साक्षी", "references": ["साक्षी", "शपथ", "सत्य"], "language": "hi"},
+    {"id": "dg-007", "prompt": "सड़क-छाप मज़ाक में लिखें: 'बहुत भूख लगी है।'", "reference": "भूख", "references": ["भूख", "पेट", "खाना"], "language": "hi"},
+    {"id": "dg-008", "prompt": "उर्दू-प्रभावित शायराना अंदाज़ में: 'चाँद बहुत सुंदर है आज।'", "reference": "हुस्न", "references": ["हुस्न", "महताब", "चाँद", "ज़मीं"], "language": "hi"},
+    {"id": "dg-009", "prompt": "पत्रकारीय हिन्दी में हेडलाइन: 'महंगाई बढ़ रही है।'", "reference": "महंगाई", "references": ["महंगाई", "बढ़ोतरी", "मुद्रास्फीति"], "language": "hi"},
+    {"id": "dg-010", "prompt": "ग्रामीण लोकभाषा में कहें: 'खेत में पानी कम है।'", "reference": "खेत", "references": ["खेत", "पानी", "खेती"], "language": "hi"}
+  ]
+}

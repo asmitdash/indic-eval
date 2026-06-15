@@ -1,0 +1,20 @@
+{
+  "id": "indic-transliteration-v1",
+  "name": "Roman-Devanagari Transliteration Robustness",
+  "description": "User typed in Hinglish; model must produce Devanagari OR a clean Latin transliteration. Tests robustness to script-mixing in input.",
+  "primary_metric": "transliteration",
+  "examples": [
+    {"id": "tr-001", "prompt": "Hindi mein 'good morning' ka matlab kya hota hai? Answer in Devanagari.", "reference": "सुप्रभात", "language": "hi-en", "metadata": {"reference_devanagari": "सुप्रभात", "reference_latin": "suprabhat"}},
+    {"id": "tr-002", "prompt": "Mujhe Devanagari mein 'thank you' likh ke do.", "reference": "धन्यवाद", "language": "hi-en", "metadata": {"reference_devanagari": "धन्यवाद", "reference_latin": "dhanyavad"}},
+    {"id": "tr-003", "prompt": "Translate 'main aapse pyaar karta hoon' into Devanagari script.", "reference": "मैं आपसे प्यार करता हूँ", "language": "hi-en", "metadata": {"reference_devanagari": "मैं आपसे प्यार", "reference_latin": "main aapse pyaar"}},
+    {"id": "tr-004", "prompt": "Likho 'Diwali' Hindi me, devnagari script use karke.", "reference": "दिवाली", "language": "hi-en", "metadata": {"reference_devanagari": "दिवाली", "reference_latin": "diwali"}},
+    {"id": "tr-005", "prompt": "Hinglish: 'kal milte hain' — please give the proper Hindi script version.", "reference": "कल मिलते हैं", "language": "hi-en", "metadata": {"reference_devanagari": "कल मिलते", "reference_latin": "kal milte"}},
+    {"id": "tr-006", "prompt": "Convert this to Devanagari: Bharat Mata ki Jai", "reference": "भारत माता की जय", "language": "hi-en", "metadata": {"reference_devanagari": "भारत माता की जय", "reference_latin": "bharat mata ki jai"}},
+    {"id": "tr-007", "prompt": "Likh: 'Namaste' Hindi script me", "reference": "नमस्ते", "language": "hi-en", "metadata": {"reference_devanagari": "नमस्ते", "reference_latin": "namaste"}},
+    {"id": "tr-008", "prompt": "What is 'water' in Hindi? Devanagari please.", "reference": "पानी", "language": "hi-en", "metadata": {"reference_devanagari": "पानी", "reference_latin": "paani"}},
+    {"id": "tr-009", "prompt": "Mujhe 'school' Devanagari me chahiye.", "reference": "विद्यालय", "references": ["विद्यालय", "स्कूल"], "language": "hi-en", "metadata": {"reference_devanagari": "विद्यालय", "reference_latin": "vidyalaya"}},
+    {"id": "tr-010", "prompt": "Hinglish input: 'mera naam Asha hai' -> Devanagari output:", "reference": "मेरा नाम आशा है", "language": "hi-en", "metadata": {"reference_devanagari": "मेरा नाम आशा", "reference_latin": "mera naam asha"}},
+    {"id": "tr-011", "prompt": "Bengali script me 'amar nam Ravi' likho.", "reference": "আমার নাম রবি", "language": "bn", "metadata": {"reference_devanagari": "আমার নাম রবি", "reference_latin": "amar nam ravi"}},
+    {"id": "tr-012", "prompt": "Tamil script: 'vanakkam' please.", "reference": "வணக்கம்", "language": "ta", "metadata": {"reference_devanagari": "வணக்கம்", "reference_latin": "vanakkam"}}
+  ]
+}

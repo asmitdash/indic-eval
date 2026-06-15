@@ -1,0 +1,18 @@
+{
+  "id": "indic-dialect-bhojpuri-v1",
+  "name": "Bhojpuri / Awadhi Dialect",
+  "description": "Hindi-family dialects (Bhojpuri, Awadhi, Magahi) are spoken by 200M+ people but treated as 'broken Hindi' by most LLMs. This benchmark tests whether the model recognises and responds in the dialect when prompted, instead of standardising to Khariboli Hindi.",
+  "primary_metric": "contains",
+  "examples": [
+    {"id": "dl-bho-001", "prompt": "भोजपुरी में जवाब दीं: रउआ कहाँ से बानी?", "reference": "बानी", "references": ["बानी", "हम", "बा", "हईं"], "language": "bho"},
+    {"id": "dl-bho-002", "prompt": "भोजपुरी में पूछीं: 'खाना खाइलईं का?' — एकर मतलब बताईं भोजपुरीए में।", "reference": "खाना", "references": ["खाना", "खा", "हो"], "language": "bho"},
+    {"id": "dl-bho-003", "prompt": "भोजपुरी गीत के बोल लिखीं: नायक नायिका के बीचा बातचीत।", "reference": "हो", "references": ["हो", "ना", "साजना", "सजनवा"], "language": "bho"},
+    {"id": "dl-bho-004", "prompt": "अवधी में कहीं: 'मैं घर जा रहा हूँ।'", "reference": "जाइत", "references": ["जाइत", "जात", "बाटे", "हम"], "language": "awa"},
+    {"id": "dl-bho-005", "prompt": "अवधी रामचरितमानस की एक चौपाई बताइए जिसमें 'राम' शब्द आता है।", "reference": "राम", "references": ["राम", "श्रीराम"], "language": "awa"},
+    {"id": "dl-bho-006", "prompt": "मगही में बताइए: 'तुम्हारा क्या नाम है?'", "reference": "नाम", "references": ["नाम", "हो", "बा"], "language": "mag"},
+    {"id": "dl-bho-007", "prompt": "भोजपुरी छठ गीत का एक अंश बताइए।", "reference": "छठ", "references": ["छठ", "छठी", "मईया", "सूरज"], "language": "bho"},
+    {"id": "dl-bho-008", "prompt": "भोजपुरी में अनुवाद करीं: 'खाना बहुत स्वादिष्ट था।'", "reference": "स्वाद", "references": ["स्वाद", "रसगर", "बढ़िया", "नीक"], "language": "bho"},
+    {"id": "dl-bho-009", "prompt": "अवधी लोकगीत: सावन के बारे में कुछ पंक्तियाँ।", "reference": "सावन", "references": ["सावन", "बदरा", "बरसात"], "language": "awa"},
+    {"id": "dl-bho-010", "prompt": "भोजपुरी में पूछिए हाल-चाल — दू-तीन पंक्ति।", "reference": "हाल", "references": ["हाल", "बानी", "केकरा"], "language": "bho"}
+  ]
+}
