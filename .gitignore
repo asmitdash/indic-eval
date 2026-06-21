@@ -50,3 +50,5 @@ scorecard*.json
 leaderboard.jsonl
 logs/
 *.log
+reports/
+context.md
